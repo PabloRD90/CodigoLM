@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosteleria 123</title>
+    <link rel="stylesheet" href="Hojaestiloslm.CSS">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><b><a href="#inicio">Inicio</a></b></li>
+                <li><b><a href="#quienessomos">¿Quiénes somos?</a></b></li>
+                <li><b><a href="#productosservicios">Productos y Servicios</a></b></li>
+                <li><b><a href="#contacto">Contacto</a></b></li>
+                <li><b><a href="#trabajaconnosotros">Trabaja con nosotros</a></b></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio">
+        <h2>Bienvenido al Restaurante 123</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias eos enim quisquam ab, quos libero id ex
+            hic quaerat magni possimus autem maiores officiis expedita laborum harum omnis inventore facere..</p>
+        <div class="ImagenInicio">
+            <figure>
+                <img src="ImagenHTML/Hosteleria1.jpg" alt="Imagen de bienvenida" width="275" height="200">
+                <figcaption><i>Foto del lugar</i></figcaption>
+            </figure>
+            <figure>
+                <img src="ImagenHTML/Hosteleria2.avif" alt="Imagen de cocina" width="275" height="200">
+                <figcaption><i>Foto de nuestas cocinas</i></figcaption>
+            </figure>
+        </div>
+    </section>
+    <section id="quienessomos">
+        <h2>¿Quiénes somos?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur itaque laudantium, provident minima
+            fugit culpa tempore sit aperiam nostrum accusamus iste quia amet illo! Blanditiis illo neque doloremque
+            dolorum sapiente!.</p>
+        <div class="Fotos">
+            <figure>
+            <img src="ImagenHTML/Camarero.avif" alt="Camarero 1" width="200" height="200">
+            <figcaption><i>Camarero 1</i></figcaption>
+        </figure>
+        <figure>
+            <img src="ImagenHTML/Camarero.avif" alt="Camarero 2" width="200" height="200">
+            <figcaption><i>Camarero 2</i></figcaption>
+            </figure>
+            <figure>
+            <img src="ImagenHTML/Camarero.avif" alt="Camarero 3" width="200" height="200">
+            <figcaption><i>Camarero 3</i></figcaption>
+            </figure>
+            <figure>
+                <img src="ImagenHTML/Camarero.avif" alt="Camarero 4" width="200" height="200">
+                <figcaption><i>Camarero 4</i></figcaption>
+                </figure>
+        </div>
+        <div class="video">
+            <video width="300" height="300" controls>
+                <source src="ImagenHTML/Mesacomida.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <section id="productosservicios">
+        <h2>Productos y Servicios</h2>
+        <table>
+            <caption>Comida y Bebida</caption>
+            <thead>
+                <tr>
+                    <th>Productos</th>
+                    <th>Precios</th>
+                    <th>Procedencia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Producto 1 (En Español e Ingles)</td>
+                    <td>xx,xx €</td>
+                    <td>Autoctono</td>
+                </tr>
+                <tr>
+                    <td>Producto 2 (En Español e Ingles)</td>
+                    <td>xx,xx €</td>
+                    <td>Autoctono</td>
+                </tr>
+                <tr>
+                    <td>Producto 3 (En Español e Ingles)</td>
+                    <td>xx,xx €</td>
+                    <td>Extranjero</td>
+                </tr>
+                <tr>
+                    <td>Producto X (En Español e Ingles)</td>
+                    <td>xx,xx €</td>
+                    <td>Extranjero</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Dirección: Calle 123,Ciudad</p>
+        <p>Email: email.restaurante@123</p>
+        <p>Teléfono: +34 123 456 7890</p>
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="175"></iframe>
+        </div>
+        <h3><em>Solicitud de información</em></h3>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section id="trabajaconnosotros">
+        <h2>Trabaja con Nosotros</h2>
+
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre-candidato">Nombre:</label>
+                <input type="text" id="nombre-candidato" name="nombre-candidato" required>
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+
+                <label for="nacionalidad">Nacionalidad:</label>
+                <input type="text" id="nacionalidad" name="nacionalidad" required>
+
+                <label for="codigo-postal">Código Postal:</label>
+                <input type="text" id="codigo-postal" name="codigo-postal" required>
+
+                <label for="telefono-candidato">Teléfono:</label>
+                <input type="tel" id="telefono-candidato" name="telefono-candidato" required>
+
+                <label for="email-candidato">Email:</label>
+                <input type="email" id="email-candidato" name="email-candidato" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Formación</legend>
+                <label for="titulacion">Titulación:</label>
+                <input type="text" id="titulacion" name="titulacion">
+
+                <label for="inicio-formacion">Año de inicio:</label>
+                <input type="number" id="inicio-formacion" name="inicio-formacion" min="1900" max="2099">
+
+                <label for="fin-formacion">Año de finalización:</label>
+                <input type="number" id="fin-formacion" name="fin-formacion" min="1900" max="2099">
+            </fieldset>
+
+            <fieldset>
+                <legend>Idiomas</legend>
+                <label for="idiomas">Idiomas:</label>
+                <input type="text" id="idiomas" name="idiomas" required>
+
+                <label for="hablado">Hablado:</label>
+                <select id="hablado" name="hablado">
+                    <option value="excelente">Excelente</option>
+                    <option value="bien">Bien</option>
+                    <option value="regular">Regular</option>
+                    <option value="nada">Nada</option>
+                </select>
+                <label for="leido">Leido:</label>
+                <select id="leido" name="leido">
+                    <option value="excelente">Excelente</option>
+                    <option value="bien">Bien</option>
+                    <option value="regular">Regular</option>
+                    <option value="nada">Nada</option>
+                </select>
+                <label for="escrito">Escrito:</label>
+                <select id="escrito" name="escrito">
+                    <option value="excelente">Excelente</option>
+                    <option value="bien">Bien</option>
+                    <option value="regular">Regular</option>
+                    <option value="nada">Nada</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Explicanos los motivos de tu interés en nuestra marca</legend>
+                <label for="Motivos">Motivos:</label>
+                <textarea id="Motivos" name="Motivos" rows="4" required></textarea>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <br>
+        <hr>
+        <p><em>También puedes visitarnos en:</em></p>
+        <ul>
+            <li><a href="https://www.x.com" target="_blank"><img src="ImagenHTML/Xlogo.jpg" alt="X" width="50"
+                        height="40"></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img src="ImagenHTML/instalogo.jpg" alt="Instagram"
+                        width="50" height="40"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
